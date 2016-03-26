@@ -27,7 +27,7 @@ except socket.error, msg:
 print 'Socket Created'
 
 #------------------------ server IP ----------------------------
-remote_ip = "224.0.0.0" # class D: 224.0.0.0 ~ 239.255.255.255
+remote_ip = "224.3.29.71" # class D: 224.0.0.0 ~ 239.255.255.255
 port = 12345                # Reserve a port for your service.
 
 #------------------------ send data ----------------------------

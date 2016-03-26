@@ -31,7 +31,7 @@ print 'Socket bind complete'
 #     struct in_addr imr_multiaddr; /*  Group multicast address */
 #     struct in_addr imr_interface; /*  Local interface address */
 # };
-grpAddr = "224.0.0.0" # class D: 224.0.0.0 ~ 239.255.255.255
+grpAddr = "224.3.29.71" # class D: 224.0.0.0 ~ 239.255.255.255
 multicastRequest = struct.pack("4sl", socket.inet_aton(grpAddr), socket.INADDR_ANY)
 s.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, multicastRequest)
 
