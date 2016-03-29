@@ -6,7 +6,7 @@ import sys
 import socket
 import time
 
-mypath = 'C:\\Users\\Jeff\\Desktop\\Class Lectures\\Level 4 Term 2\\Comp Eng 4DN4\\lab3\\default - Copy\\A\\'
+mypath = os.path.realpath(__file__)
 BUFF = 1024
 
 host = "localhost 3000"
