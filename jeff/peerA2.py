@@ -279,6 +279,7 @@ if __name__ == "__main__":
                 size=sock.recv(1024)
                 amount_expected=int(size)
                 amount_received = 0
+		print "msg 2 connected and sent 1\n"
 
                 print '\n'
                 while amount_received< amount_expected:
