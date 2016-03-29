@@ -6,12 +6,12 @@ import sys
 import socket
 import time
 
-mypath = os.path.realpath(__file__)
+mypath = os.path.dirname(os.path.abspath(__file__))
 BUFF = 1024
 
-host = "localhost"
-known_hosts = ['localhost']
-default_known_hosts = ['localhost']
+host = "localhost 3001"
+known_hosts = ['localhost 3000']
+default_known_hosts = ['localhost 3000']
 found_list = []
 found_hosts = []
 
