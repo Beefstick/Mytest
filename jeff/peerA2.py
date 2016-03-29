@@ -6,7 +6,7 @@ import sys
 import socket
 import time
 
-mypath = os.path.realpath(__file__)
+mypath = os.path.dirname(os.path.abspath(__file__))
 BUFF = 1024
 
 host = "localhost 3000"
@@ -259,6 +259,7 @@ if __name__ == "__main__":
         if msg == "1":
 
             path = mypath
+	    print path
             myString = '\n'
             for root, dirs, files in os.walk( path ):
                 for name in files:
