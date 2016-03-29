@@ -6,12 +6,12 @@ import sys
 import socket
 import time
 
-mypath = 'C:\\Users\\Jeff\\Desktop\\Class Lectures\\Level 4 Term 2\\Comp Eng 4DN4\\lab3\\default - Copy\\B\\'
+mypath = os.path.realpath(__file__)
 BUFF = 1024
 
-host = "localhost 3001"
-known_hosts = ['localhost 3002']
-default_known_hosts = ['localhost 3002']
+host = "localhost"
+known_hosts = ['localhost']
+default_known_hosts = ['localhost']
 found_list = []
 found_hosts = []
 
